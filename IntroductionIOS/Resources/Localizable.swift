@@ -12,7 +12,7 @@ extension String {
     struct Title {
         static var home: String { "title.home".localizable }
         static var detail: String { "title.detail".localizable }
-        static var newText: String { "Add a new Text".localizable }
+        static var newText: String { "title.new_text".localizable }
     }
     
     struct Message {

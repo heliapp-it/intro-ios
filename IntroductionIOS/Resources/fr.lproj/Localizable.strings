@@ -7,8 +7,8 @@
 */
 
 "title.home"="Accueil";
-
 "title.detail"="Detail";
+"title.new_text"="Ajouter un texte";
 
 "message.new_text"="Insérez votre texte ici";
 

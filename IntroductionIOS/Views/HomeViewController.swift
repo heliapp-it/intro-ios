@@ -10,7 +10,6 @@ import UIKit
 class HomeViewController: UIViewController {
     
     private let viewModel: HomeViewModelProtocol
-    
     private let homeView = HomeView()
     
     init(viewModel: HomeViewModelProtocol = HomeViewModel()) {
@@ -45,9 +44,11 @@ class HomeViewController: UIViewController {
         )
         
         viewModel.delegate = self
+        viewModel.load()
     }
 }
 
+//MARK: - Actions
 extension HomeViewController {
     
     @objc func onAddButtonPressed() {
@@ -55,6 +56,7 @@ extension HomeViewController {
     }
 }
 
+//MARK: - HomeDelegate
 extension HomeViewController: HomeDelegate {
     
     func onRefreshData() {
@@ -85,6 +87,8 @@ extension HomeViewController: HomeDelegate {
     }
 }
 
+
+//MARK: - UITableViewDelegate & UITableViewDataSource
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
