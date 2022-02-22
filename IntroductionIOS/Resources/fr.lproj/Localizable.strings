@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  IntroductionIOS
+
+  Created by Jonas Freres on 22/02/2022.
+  
+*/
+
+"title.home"="Accueil";
+
+"title.detail"="Detail";
+
+"message.new_text"="Insérez votre texte ici";
+
+"action.save"="Sauvegarder";
+"action.delete"="Supprimer";
+"action.cancel"="Annuler";
+"action.close"="Fermer";
+
+"placeholder.new_text"="Nouveau texte";

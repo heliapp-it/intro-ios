@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Home"
+        title = .Title.home
         
         homeView.tableView.register(
             HomeTableViewCell.self,
@@ -62,21 +62,21 @@ extension HomeViewController: HomeDelegate {
     }
     
     func openDetail(for text: TextViewData) {
-        let alert = UIAlertController(title: "Detail", message: text.text, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
-        alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { [weak self] _ in
+        let alert = UIAlertController(title: .Title.detail, message: text.text, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: .Action.close, style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: .Action.delete, style: .destructive, handler: { [weak self] _ in
             self?.viewModel.delete(text: text)
         }))
         present(alert, animated: true, completion: nil)
     }
     
     func openNewForm() {
-        let alert = UIAlertController(title: "New Text", message: "Insert your new text here", preferredStyle: .alert)
+        let alert = UIAlertController(title: .Title.newText, message: .Message.newText, preferredStyle: .alert)
         alert.addTextField { textField in
-            textField.placeholder = "New text"
+            textField.placeholder = .PlaceHolder.newText
         }
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        alert.addAction(UIAlertAction(title: "Save", style: .destructive, handler: { [weak self] _ in
+        alert.addAction(UIAlertAction(title: .Action.cancel, style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: .Action.save, style: .default, handler: { [weak self] _ in
             if let text = alert.textFields?.element(at: 0)?.text, !text.isEmpty {
                 self?.viewModel.insert(text: text)
             }
