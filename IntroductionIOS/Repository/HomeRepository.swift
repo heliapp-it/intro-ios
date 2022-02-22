@@ -24,7 +24,11 @@ protocol HomeRepositoryProtocol {
 
 class HomeRepository: HomeRepositoryProtocol {
     
-    private let fileName = "texts"
+    private let fileName: String
+    
+    init(fileName: String = "texts") {
+        self.fileName = fileName
+    }
     
     private var documentPath: URL? {
         FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
@@ -42,13 +46,20 @@ class HomeRepository: HomeRepositoryProtocol {
                let data = try? Data(contentsOf: url) {
                 do {
                     let texts = try decoder.decode([TextData].self, from: data)
-                    completion(texts)
+                    DispatchQueue.main.sync {
+                        completion(texts)
+                    }
+                    
                 } catch {
                     print(error)
-                    completion([])
+                    DispatchQueue.main.sync {
+                        completion([])
+                    }
                 }
             } else {
-                completion([])
+                DispatchQueue.main.sync {
+                    completion([])
+                }
             }
         }
     }

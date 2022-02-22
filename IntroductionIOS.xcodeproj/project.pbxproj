@@ -11,6 +11,8 @@
 		BD47947EBFDB3DE1837364DC /* Pods_IntroductionIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D374F64ADFDB834DDFD159 /* Pods_IntroductionIOSTests.framework */; };
 		D03EF49E0D0CB4D38077A2F0 /* Pods_IntroductionIOS_IntroductionIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5486AB5215A185DCE0E66BE3 /* Pods_IntroductionIOS_IntroductionIOSUITests.framework */; };
 		DD09204B27C4D6BF00D49275 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09204A27C4D6BF00D49275 /* HomeTableViewCell.swift */; };
+		DD3F355F27C4FE4C0074D5C0 /* HomeRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F355E27C4FE4C0074D5C0 /* HomeRepositoryTests.swift */; };
+		DD3F356127C4FFF70074D5C0 /* HomeInteracorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F356027C4FFF70074D5C0 /* HomeInteracorTests.swift */; };
 		DD82387627C4ED3F00FD9AA0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD82387827C4ED3F00FD9AA0 /* Localizable.strings */; };
 		DD82387A27C4EDCE00FD9AA0 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82387927C4EDCE00FD9AA0 /* Localizable.swift */; };
 		DD82387E27C4F04600FD9AA0 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD82387D27C4F04600FD9AA0 /* HomeRepository.swift */; };
@@ -26,7 +28,6 @@
 		DDFC7CED27BD77CA0020BDF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFC7CEB27BD77CA0020BDF4 /* Main.storyboard */; };
 		DDFC7CEF27BD77CC0020BDF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFC7CEE27BD77CC0020BDF4 /* Assets.xcassets */; };
 		DDFC7CF227BD77CC0020BDF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFC7CF027BD77CC0020BDF4 /* LaunchScreen.storyboard */; };
-		DDFC7CFD27BD77CC0020BDF4 /* IntroductionIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7CFC27BD77CC0020BDF4 /* IntroductionIOSTests.swift */; };
 		DDFC7D0727BD77CC0020BDF4 /* IntroductionIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7D0627BD77CC0020BDF4 /* IntroductionIOSUITests.swift */; };
 		DDFC7D0927BD77CC0020BDF4 /* IntroductionIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC7D0827BD77CC0020BDF4 /* IntroductionIOSUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,8 @@
 		B0598DE63E9C1A9640CA33DA /* Pods_IntroductionIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntroductionIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98A3F3F7F5A993865CE9985 /* Pods-IntroductionIOS-IntroductionIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntroductionIOS-IntroductionIOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-IntroductionIOS-IntroductionIOSUITests/Pods-IntroductionIOS-IntroductionIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD09204A27C4D6BF00D49275 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		DD3F355E27C4FE4C0074D5C0 /* HomeRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepositoryTests.swift; sourceTree = "<group>"; };
+		DD3F356027C4FFF70074D5C0 /* HomeInteracorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteracorTests.swift; sourceTree = "<group>"; };
 		DD82387727C4ED3F00FD9AA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DD82387927C4EDCE00FD9AA0 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		DD82387B27C4EFBD00FD9AA0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -76,7 +79,6 @@
 		DDFC7CF127BD77CC0020BDF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDFC7CF327BD77CC0020BDF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDFC7CF827BD77CC0020BDF4 /* IntroductionIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntroductionIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDFC7CFC27BD77CC0020BDF4 /* IntroductionIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionIOSTests.swift; sourceTree = "<group>"; };
 		DDFC7D0227BD77CC0020BDF4 /* IntroductionIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntroductionIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFC7D0627BD77CC0020BDF4 /* IntroductionIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionIOSUITests.swift; sourceTree = "<group>"; };
 		DDFC7D0827BD77CC0020BDF4 /* IntroductionIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -238,7 +240,8 @@
 		DDFC7CFB27BD77CC0020BDF4 /* IntroductionIOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				DDFC7CFC27BD77CC0020BDF4 /* IntroductionIOSTests.swift */,
+				DD3F355E27C4FE4C0074D5C0 /* HomeRepositoryTests.swift */,
+				DD3F356027C4FFF70074D5C0 /* HomeInteracorTests.swift */,
 			);
 			path = IntroductionIOSTests;
 			sourceTree = "<group>";
@@ -522,7 +525,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDFC7CFD27BD77CC0020BDF4 /* IntroductionIOSTests.swift in Sources */,
+				DD3F356127C4FFF70074D5C0 /* HomeInteracorTests.swift in Sources */,
+				DD3F355F27C4FE4C0074D5C0 /* HomeRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

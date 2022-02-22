@@ -45,9 +45,7 @@ class HomeInteractor: HomeInteractorProcotol {
         
         repository.loadTexts { [weak self] result in
             self?.isLoading = false
-            DispatchQueue.main.sync {
-                completion(result.map { TextViewData(id: $0.id, text: $0.text) })
-            }
+            completion(result.map { TextViewData(id: $0.id, text: $0.text) })
         }
     }
     
@@ -58,9 +56,7 @@ class HomeInteractor: HomeInteractorProcotol {
             newData.append(TextData(id: text.id, text: text.text))
             self?.repository.save(texts: newData)
             self?.isLoading = false
-            DispatchQueue.main.sync {
-                completion(newData.map { TextViewData(id: $0.id, text: $0.text) })
-            }
+            completion(newData.map { TextViewData(id: $0.id, text: $0.text) })
         }
     }
     
@@ -73,9 +69,7 @@ class HomeInteractor: HomeInteractorProcotol {
             }
             self?.repository.save(texts: newData)
             self?.isLoading = false
-            DispatchQueue.main.sync {
-                completion(newData.map { TextViewData(id: $0.id, text: $0.text) })
-            }
+            completion(newData.map { TextViewData(id: $0.id, text: $0.text) })
         }
     }
     
